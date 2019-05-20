@@ -1,0 +1,11 @@
+
+
+Method insert logins
+
+$pass_hache = password_hash("azerty", PASSWORD_DEFAULT);
+
+$req = $bdd->prepare('INSERT INTO logins(logins, pass) VALUES(:pseudo, :pass)');
+$req->execute(array(
+    'pseudo' => "Jean Laroche",
+    'pass' => $pass_hache
+);
