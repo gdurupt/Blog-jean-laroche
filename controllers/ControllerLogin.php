@@ -20,7 +20,8 @@ class ControllerLogin{
     private function pageLogin(){     
         
         if(isset($_POST['Post'])){
-            $this->$_postManager = new PostManager($_POST['Post']);
+          $this->$_postManager = new PostManager($_POST['Post']);
+          
         }
             $this->_view = new View('Login');     
             $this->_view->generate(array());
