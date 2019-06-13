@@ -5,8 +5,8 @@
                 <div class="login100-pic js-tilt" data-tilt>
                     <img src="public/image/images_login/img-01.png" alt="IMG">
                 </div>
-<!--===============================================================================================-->  
-                <form action="Post" method="post" class="login100-form validate-form">
+<!--===============================================================================================--> 
+                <form action="login" method="post" class="login100-form validate-form">
                     <input type="hidden" name="Post" value="ManageLogin"/>
                     <div class="login100-form-title">
                         <h5>Panneau admin</h5>

@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="fr">
-<!-- ---------------------------------------------------------------------------------------- -->      
-<!-- ------------------------------        Head         ------------------------------------- -->    
-<!-- ---------------------------------------------------------------------------------------- --> 
+<!--===============================================================================================-->     
+<!--==============================         head        ==========================================-->    
+<!--===============================================================================================--> 
 <head>
     <meta charset="UTF-8">
     <title><?php echo $_GET['url'] ?></title>
@@ -10,7 +10,7 @@
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
     <link rel="stylesheet" type="text/css" href="public/bootstrap/css/bootstrap.min.css">
     
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Old+Standard+TT" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&family=Old+Standard+TT" rel="stylesheet">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
@@ -18,11 +18,12 @@
     
     <link rel="stylesheet" href="public/CSS/aos.css">
     
-    <link rel="stylesheet" type="text/css" href="public/CSS/style.css">   
+    <link rel="stylesheet" type="text/css" href="public/CSS/style.css">
+
 <?php  
 //--------------------------------------------------------------------------------------------     
 //--------------------------------         Head Admin        ---------------------------------    
-//--------------------------------------------------------------------------------------------          
+//--------------------------------------------------------------------------------------------       
 ?>
     <link rel="icon" type="image/png" href="public/image/images_login/icons/favicon.ico" />
     <!--===============================================================================================-->
@@ -33,62 +34,63 @@
     <link rel="stylesheet" type="text/css" href="public/CSS/util_login.css">
     <!--===============================================================================================-->   
     <link rel="stylesheet" type="text/css" href="public/CSS/main_login.css">
+    <!--===============================================================================================-->        
 </head>
 
 <body>
-<!-- ---------------------------------------------------------------------------------------- -->      
-<!-- ------------------------------          Header       ----------------------------------- -->    
-<!-- ---------------------------------------------------------------------------------------- -->   
+<!--===============================================================================================-->     
+<!--==============================         header        ==========================================-->    
+<!--===============================================================================================-->  
     <header class="d-flex flex-column flex-md-row align-items-center">
         <div class="container">
-            <a href="https://jean-laroche.durupt-guillaume.fr" class="navbar-brand">
+            <a href="Accueil" class="navbar-brand">
                 Jean Laroche
             </a>
             <nav class="navbar navbar-expand-lg navbar-light right">
                 <div class="main-navbar right">
                     <ul class="navbar-nav mr-auto">
-<!-- ---------------------------------------------------------------------------------------- --> 
+<!--===============================================================================================-->
                         <li class="nav-item active">
 <?php   
-    if(isset($_GET['url']) AND $_GET['url'] == 'admin'){
-?>          <a class="nav-link" href="admin">Accueil admin</a><?php       
+    if(isset($_GET['url']) AND $_GET['url'] == 'Admin'){
+?>          <a class="nav-link" href="Admin">Accueil admin</a><?php       
     }else{
-?>          <a class="nav-link" href="accueil">Accueil</a><?php
+?>          <a class="nav-link" href="Accueil">Accueil</a><?php
     }
 ?>
                         </li>
-<!-- ---------------------------------------------------------------------------------------- -->                         
+<!--===============================================================================================-->                       
                         <li class="nav-item">
 <?php   
-    if(isset($_GET['url']) AND $_GET['url'] == 'admin'){
-?>          <a class="nav-link" href="admin&page=Page">Page</a><?php
+    if(isset($_GET['url']) AND $_GET['url'] == 'Admin'){
+?>          <a class="nav-link" href="Admin&page=Page">Page</a><?php
         
     }else{
-?>          <a class="nav-link" href="auteur">auteur</a><?php
+?>          <a class="nav-link" href="Auteur">Auteur</a><?php
     }    
 ?>
                         </li>
-<!-- ---------------------------------------------------------------------------------------- -->                        
+<!--===============================================================================================-->
                         <li class="nav-item">
 <?php   
-    if(isset($_GET['url']) AND $_GET['url'] == 'admin'){
-?>          <a class="nav-link" href="admin&page=Commentaire">Commentaire</a><?php        
+    if(isset($_GET['url']) AND $_GET['url'] == 'Admin'){
+?>          <a class="nav-link" href="Admin&page=Commentaire">Commentaire</a><?php        
     }else{
-?>          <a class="nav-link" href="livre">Un billet simple pour l'alaska</a><?php
+?>          <a class="nav-link" href="Livre">Un billet simple pour l'alaska</a><?php
     }   
 ?>
                         </li>
-   <!-- ---------------------------------------------------------------------------------------- -->                      
+<!--===============================================================================================-->                     
                         <li class="nav-item">
 <?php   
-    if(isset($_GET['url']) AND $_GET['url'] == 'admin'){
+    if(isset($_GET['url']) AND $_GET['url'] == 'Admin'){
 ?>          <a class="nav-link"></a><?php       
     }else{
-?>          <a class="nav-link" href="contact">Contact</a><?php
+?>          <a class="nav-link" href="Contact">Contact</a><?php
     }    
 ?>
                         </li>
-<!-- ---------------------------------------------------------------------------------------- -->                         
+<!--===============================================================================================-->                        
                     </ul>
                 </div>
                 <button class="navbar-toggler right" type="button" data-toggle="collapse">
@@ -99,49 +101,48 @@
             </nav>
         </div>
     </header>
-<!-- ---------------------------------------------------------------------------------------- -->      
-<!-- ------------------------------   Données Recu par page --------------------------------- -->    
-<!-- ---------------------------------------------------------------------------------------- -->   
+<!--===============================================================================================-->     
+<!--==============================         Donnée        ==========================================-->    
+<!--===============================================================================================-->   
 <?php echo $content ?>
-<!-- ---------------------------------------------------------------------------------------- -->      
-<!-- ------------------------------         Footer        ----------------------------------- -->    
-<!-- ---------------------------------------------------------------------------------------- -->   
+<!--===============================================================================================-->     
+<!--==============================         Footer       ==========================================-->    
+<!--===============================================================================================--> 
     <footer>
         <div class="container">
             <div class="menu-sec">
                 <ul>
                     <li>
-                        <a href="accueil">Accueil</a>
+                        <a href="Accueil">Accueil</a>
                     </li>
                     <li>
-                        <a href="auteur">Auteur</a>
+                        <a href="Auteur">Auteur</a>
                     </li>
                     <li>
                         <a href="Livre"> Un billet simple pour l'alaska </a>
                     </li>
                     <li>
-                        <a href="contact">Contact</a>
+                        <a href="Contact">Contact</a>
                     </li>
                 </ul>
                 <h3>(C) Jean Laroche 2019. Tout droits reservé.</h3>
             </div>
             <div class="logo">
-                <a href="accueil">Jean Laroche.</a>
+                <a href="Accueil">Jean Laroche.</a>
             </div>
         </div>
     </footer>
-<!-- ---------------------------------------------------------------------------------------- -->      
-<!-- ------------------------------         Script        ----------------------------------- -->    
-<!-- ---------------------------------------------------------------------------------------- -->    
+<!--===============================================================================================-->     
+<!--==============================         Script        ==========================================-->    
+<!--===============================================================================================-->   
     <script src="public/jquery/jquery.js"></script>
-<!--===============================================================================================-->
-    <script src="public/JS/animation.js"></script>
 <!--===============================================================================================-->
     <script src="public/jquery/jquery-3.2.1.min.js"></script>
 <!--===============================================================================================-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<!--===============================================================================================-->
     <script src="public/jquery/tilt.jquery.min.js"></script>
 <!--===============================================================================================-->
-    <script src="public/bootstrap/js/bootstrap.min.js"></script>
     <script>
         $('.js-tilt').tilt({
             scale: 1.1
@@ -149,7 +150,7 @@
     </script>
 <!--===============================================================================================-->
     <script src="public/Js/main.js"></script>
-    
+<!--===============================================================================================--> 
 </body>
 
 </html>

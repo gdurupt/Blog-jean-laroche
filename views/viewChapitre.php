@@ -1,17 +1,15 @@
-<!--===============================================================================================--> 
+<!--===============================================================================================-->
 <section class="blog-inner-sec">
     <hr class="color">
 <!--===============================================================================================--> 
 <?php foreach ($articles as $article):?>
     <div class="container">
         <div class="blog-content">
-            <div class="display-4"><?= $article->titre() ?></div>
+            <div class="titrechapitre"><?= $article->titre() ?></div>
             <div class="bread-crome-sec ">
-                <ol class="breadcrumb">
-                    <li class="admin breadcrumb-item">
-                        <h6>
-                            By <a href="#">Jean Laroche</a>
-                        </h6>
+                <ol class="breadcrumb">          
+                  <li class="admin breadcrumb-item">
+                            By <a href="#">Jean Laroche</a>  
                     </li>
                     <li class="date breadcrumb-item active">Le <?= $article->dateCrea() ?></li>
                 </ol>
@@ -54,7 +52,7 @@
                                     <h6><?= htmlspecialchars($comment->comments()) ?> </h6>
                                 </div>
                                 <div class="d-flex">
-<!--===============================================================================================-->  
+<!--===============================================================================================--> 
                                     <form action="chapitre&id=<?= $_GET['id'] ?>" method="post">
                                         <input type="hidden" name="Post" value="ReportComment" />
                                         <div class="card-body">
@@ -62,15 +60,15 @@
                                             <input type="submit" value="Signaler" class="btn btn-outline-danger btn-sm" onclick="return(confirm('Etes-vous sûr de vouloir signaler se commentaire?'));">
                                         </div>
                                     </form>
-<!--===============================================================================================--> 
+<!--===============================================================================================-->
                                 </div>
                             </div>
                         </div>
 <?php endforeach?>
-<!--===============================================================================================-->  
+<!--===============================================================================================-->
                         <h2>Ecrire un commentaire</h2>
                         <div class="form">
-<!--===============================================================================================-->  
+<!--===============================================================================================-->
                             <form action="chapitre&id=<?php echo $_GET['id'] ?>" method="post">
                                 <input type="hidden" name="Post" value="NewComment" />
                                 <div class="row">
@@ -85,9 +83,10 @@
                                     </div>
                                 </div>
                             </form>
-<!--===============================================================================================--> 
+<!--===============================================================================================-->
                         </div>
                     </section>
+         
                 </div>
             </div>
         </div>

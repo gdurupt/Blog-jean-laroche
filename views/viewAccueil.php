@@ -1,28 +1,23 @@
-<?php
-
-            $_SESSION['login'] = " qsdqsd";
-            $_SESSION['password'] = " qsdqsdqsd";
-
+  <?php
 echo $_SESSION['login'];
-            echo $_SESSION['password'];
+echo $_SESSION['password'];
 ?>
-
 <section class="banner-sec">
-    <!-- ---------------------------------------------------------------------------------------- --> 
+    <!--===============================================================================================-->
     <div class="container">
         <div class="banner-content-sec">
             <div class="banner-content">
                 <h2 class="aos-item" data-aos="fade-up" data-aos-duration="800">Jean Laroche<span>.</span></h2>
                 <h6 class="aos-item" data-aos="fade-up" data-aos-duration="1000">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five
+                    Bienvenue chers lecteurs, voici mon nouveau roman "Billet simple pour l'Alaska". Bonne lecture et n'hésitez pas à laisser des commentaires.
                 </h6>
             </div>
         </div>
     </div>
-    <!-- ---------------------------------------------------------------------------------------- --> 
+    <!--===============================================================================================-->
     <hr class="color">
 </section>
-<!-- ---------------------------------------------------------------------------------------- -->  
+<!--===============================================================================================--> 
 <section class="about-sec mb-100">
     <div class="main-container">
         <div class="row">
@@ -36,61 +31,61 @@ echo $_SESSION['login'];
 
                     Que seriez-vous prets a faire pour survivre ?</h3>
                 <div class="bar_wraper">
-                    <!-- ---------------------------------------------------------------------------------------- --> 
+                    <!--===============================================================================================--> 
                     <div class="skill-sec">
                         <div class="indvidual-skill aos-item" data-aos="fade-right" data-aos-duration="400">
                             <div class="skill_title">
-                                <span>L'amour de l'Alaska</span>
+                                <span>Babelio</span>
                             </div>
                             <div class="barfiller">
                                 <span class="fill" style="width:100%"></span>
-                                <span class="tip" style="left:100%">100%</span>
+                                <span class="tip" style="left:100%">5/5</span>
                             </div>
                         </div>
                         <div class="indvidual-skill aos-item" data-aos="fade-right" data-aos-duration="600">
                             <div class="skill_title">
-                                <span>Un bestseller</span>
+                                <span>SensCritique</span>
                             </div>
                             <div class="barfiller">
                                 <span class="fill" style="width:90%"></span>
-                                <span class="tip" style="left:90%">90%</span>
+                                <span class="tip" style="left:90%">4.5/5</span>
                             </div>
                         </div>
                         <div class="indvidual-skill aos-item" data-aos="fade-right" data-aos-duration="800">
                             <div class="skill_title">
-                                <span>Il procure de l’émotion</span>
+                                <span>Booknode</span>
                             </div>
                             <div class="barfiller">
                                 <span class="fill" style="width:80%"></span>
-                                <span class="tip" style="left:80%">80%</span>
+                                <span class="tip" style="left:80%">4/5</span>
                             </div>
                         </div>
                         <div class="indvidual-skill aos-item" data-aos="fade-right" data-aos-duration="1000">
                             <div class="skill_title">
-                                <span>On peut s’identifier au héros ou du moins à l’un des personnages</span>
+                                <span>Telerama</span>
                             </div>
                             <div class="barfiller">
-                                <span class="fill" style="width:80%"></span>
-                                <span class="tip" style="left:80%">80%</span>
+                                <span class="fill" style="width:85%"></span>
+                                <span class="tip" style="left:85%">4.3/5</span>
                             </div>
                         </div>
                         <div class="indvidual-skill aos-item" data-aos="fade-right" data-aos-duration="1200">
                             <div class="skill_title">
-                                <span>Après avoir refermé le livre, notre regard sur le monde n’est plus exactement le même.</span>
+                                <span>Mondedulivre</span>
                             </div>
                             <div class="barfiller">
                                 <span class="fill" style="width:99%"></span>
-                                <span class="tip" style="left:99%">99%</span>
+                                <span class="tip" style="left:99%">4.9/5</span>
                             </div>
                         </div>
                     </div>
-                    <!--===============================================================================================-->  
+                    <!--===============================================================================================-->
                 </div>
             </div>
         </div>
     </div>
 </section>
-<!--===============================================================================================-->  
+<!--===============================================================================================-->
 <section class="testimonial-sec aos-item" data-aos="fade-in" data-aos-duration="1000">
     <div class="container">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -129,16 +124,17 @@ echo $_SESSION['login'];
         </div>
     </div>
 </section>
+<!--===============================================================================================-->
+<div class="portipolio-sec">
+</div>
 <!--===============================================================================================--> 
-<section class="portipolio-sec">
-</section>
-<!-- ---------------------------------------------------------------------------------------- --> 
 <script src="public/jquery/jQuery.lightninBox.min.js"></script>
 <script src="public/Js/aos.js"></script>
 <script>
     $(".lightninBox").lightninBox();
 
 </script>
+<script src="public/bootstrap/js/bootstrap.min.js"></script>
 <!--   //     <script>
 //   AOS.init({
 //     easing: 'ease-in-out-sine'

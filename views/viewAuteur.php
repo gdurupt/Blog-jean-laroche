@@ -1,12 +1,12 @@
 <section class="about-us-sec">
     <hr class="color">
-<!--===============================================================================================-->  
+<!--===============================================================================================-->
     <div class="container">
         <div class="about">
             <h1>Jean Laroche</h1>
             <div class="row">
                 <div class="col-lg-6 col-sm-4 col-12">
-                    <img src="public/image/images/about.jpg" alt="about">
+                    <img src="public/image/images/ecrivain.jpeg" alt="about" class="img-fluid">
                 </div>
                 <div class="col-lg-6 col-sm-8 col-12">
                     <p>Jean Laroche est né en 1966 sur l'île Adak, en Alaska, et y a passé une partie de son enfance avant de s'installer en France avec sa mère et sa sœur. </p>
@@ -22,6 +22,6 @@
             <p>En 2017, il décide de publier en ligne chapitre par chapitre sur son propre site, son dernier roman BILLET SIMPLE POUR L'ALASKA. </p>
         </div>
     </div>
-<!--===============================================================================================--> 
+<!--===============================================================================================-->
     <hr class="color">
 </section>

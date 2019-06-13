@@ -2,12 +2,12 @@
     <hr class="color">
     <div class="container">
         <div class="blog-content">
-<!--===============================================================================================-->   
+<!--===============================================================================================-->  
             <h1>Me Contacter</h1>
             <h6>Pour toute question a propos de Jean Laroche ou du livre "Un Billet simple pour l'Alaska"<br>
                 Contacter moi via le formulaire ci dessous :</h6>
             <div class="form">
-<!--===============================================================================================-->  
+<!--===============================================================================================-->
                 <form action="contact" method="post">
                     <input type="hidden" name="Post" value="Contact" />
                     <div class="row">
