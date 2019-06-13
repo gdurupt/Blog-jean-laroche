@@ -33,19 +33,19 @@ class PostManager{
      public function UpdateArticle(){
             $this->article();
             $this->_articleManager->updateArticle($_GET['id'], $_POST['titre'], $_POST['article']);
-            header('location: admin&page=page&id='.$_GET['id']);
+            header('location: Admin&page=Page&id='.$_GET['id']);
     }   
 //--------------------------------------------------------------------------------------------//
          public function New(){
           $this->article();
           $this->_articleManager->newArticle($_POST['titre'], $_POST['article']);
-          header('location: admin&page=page');      
+          header('location: Admin&page=Page');      
     }
 //--------------------------------------------------------------------------------------------//  
         public function DeleteArticle(){
          $this->article();  
          $this->_articleManager->getDeleteArticle($_POST['deleteArticle']);
-         header('location: admin&page=page&id='.$_GET['id']); 
+         header('location: Admin&page=Page&id='.$_GET['id']); 
     }   
 //--------------------------------------------------------------------------------------------//     
 //--------------------------------POST PAGE ADMIN Comment-------------------------------------//    
@@ -53,13 +53,13 @@ class PostManager{
         public function DeleteComment(){
          $this->comment();  
          $this->_commentManager->getDeleteComment($_POST['deleteComment']);
-         header('location: admin&page=commentaire&id='.$_GET['id']); 
+         header('location: Admin&page=Commentaire&id='.$_GET['id']); 
     }     
 //--------------------------------------------------------------------------------------------//       
         public function ManageComment(){
          $this->comment();  
          $this->_commentManager->getReportComment($_POST['ManageComment'],"0");
-                header('location: admin&page=commentaire&id='.$_GET['id']);
+                header('location: Admin&page=Commentaire&id='.$_GET['id']);
     }     
 //--------------------------------------------------------------------------------------------//
 //-----------------------------------POST PAGE Chapitre---------------------------------------//    
@@ -99,9 +99,12 @@ class PostManager{
 //-----------------------------------POST PAGE Login------------------------------------------//    
 //--------------------------------------------------------------------------------------------//    
         public function ManageLogin(){
+          	session_start();
             $_SESSION['login'] = $_POST['pseudo'];
             $_SESSION['password'] = $_POST['password'];
-            header('location: admin');
+          
+            
+            header('location: Admin');
     }  
 //--------------------------------------------------------------------------------------------//     
 }

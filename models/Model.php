@@ -8,7 +8,12 @@ abstract class Model
 //--------------------------------           BDD          ------------------------------------//    
 //--------------------------------------------------------------------------------------------//
   private static function setBdd(){
-    self::$_bdd = new PDO('mysql:host=localhost;dbname=blog;charset=utf8', 'root', '');
+    $host_name = 'db5000078594.hosting-data.io';
+    $database = 'dbs73217';
+    $user_name = 'dbu253750';
+    $password = 'JeanLaroche+88';
+  
+    self::$_bdd = new PDO("mysql:host=$host_name; dbname=$database;", $user_name, $password);
     self::$_bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
   }
 //--------------------------------------------------------------------------------------------//     
@@ -18,24 +23,27 @@ abstract class Model
     if (self::$_bdd == null) {
       self::setBdd();
       return self::$_bdd;
-    }
+    };
   }
 //--------------------------------------------------------------------------------------------//     
 //--------------------------------    MODEL   SELECT     -------------------------------------//    
 //--------------------------------------------------------------------------------------------//
   protected function selectTable($obj, $update, $execute){
-    $this->getBdd();
+    $this->getBdd(); 
+   
     $var = [];
+
     $req = self::$_bdd->prepare($update);
     $req->execute($execute);
 
     while ($data = $req->fetch(PDO::FETCH_ASSOC)) {
 
         $var[] = new $obj($data);
-    }
+   }
 
     return $var;
     $req->closeCursor();
+    
   }
 //--------------------------------------------------------------------------------------------//     
 //--------------------------------    MODEL   INSERT     -------------------------------------//    
